@@ -255,7 +255,122 @@
 
 // alert(`Su Sueldo Neto es de ${sueldoBruto-obraSocial-jubilación-ley} pesos.`);
 
+// EJERCICIOS SOBRE CONDICIONALES 09-12/2021
 
+//EJERCICIO 1: Agregar al ejercicio 5 de Variables un validador de datos. Si ingresa un número entonces que me calcule las medidas, sino, que muestre un mensaje de error.
+
+//Crear un conversor de medidas. Pedirle al usuario que ingrese una medida en metros y pasarlo a pies, centímetros y pulgadas. Mostrar por alert los tres resultados.
+
+// let medidaMetros=parseFloat(prompt(`Ingrese la medida expresada en metros`));
+
+// if (medidaMetros) {
+
+// alert(`Equivale a ${medidaMetros*3.28084} pies`);
+// alert(`Equivale a ${medidaMetros*100} centímetros`);
+// alert(`Equivale a ${medidaMetros*39.3701} pulgadas`);
+
+// } else {
+//   alert("Error");
+// };
+
+// EJERCICIO 2
+
+//Solicitar al usuario su edad. Si es menor de 18, decir que es menor de edad, sino decir que es mayor .
+
+// let edad=18;
+
+// if (edad>=18) {
+//   alert("Sos mayor de edad");
+// } else {
+//   alert("Sos menor de edad");
+// };
+
+//EJERCICIO 3
+
+// Contexto: Una heladería. Solicitar al usuario sus sabores en un solo input. Luego preguntar si quiere cobertura de chocolate. Si dice Sí, mostrar el valor del helado 180 con el pedido completo: “Su helado sabor …. con cobertura de chocolate cuesta $180”. En caso de que no la requiera, será lo mismo pero sin cobertura de chocolate y el valor es de $150.
+
+// let sabores=prompt("Indique 3 sabores de helado a elección");
+// let cobertura=prompt("Desea cobertura de chocolate?");
+
+// if (cobertura==`Si`) {
+//   alert(`Su helado sabor ${sabores} con cobertura de chocolate cuesta $180`);
+// } else {
+//   alert(`Su helado sabor ${sabores} cuesta $150`);
+// };
+
+// EJERCICIO 4 
+
+//Mejorar el ejercicio 1 de Variables: Solicitar al usuario dos números y mostrar por consola el resultado de la suma de ambos. Informar al usuario si el número resultante es par o impar.
+
+
+//Solicitar al usuario dos números y mostrar por alert el resultado de la suma de ambos.
+
+// let primerNro= parseFloat(prompt(`Indicar primer número`));
+// let segundoNro= parseFloat(prompt(`Indicar segundo número`));
+// let resultado=primerNro+segundoNro;
+
+// alert(`La suma de ambos nros. da ${resultado}`);
+
+// if (resultado%2==0) {
+//   alert("El resultado es un número par");
+// } else {
+//   alert("El resultado es impar");
+// }
+
+//EJERCICIO 5
+
+//Solicitar al usuario un número e indicar si es positivo, negativo o cero.
+
+// let numero = prompt("Ingresa un número")
+
+// if(numero < 0 ){
+//     alert("El número que acabas de ingresar es Negativo")
+// }
+// else if (numero > 0 ){
+//     alert("El número que acabas de ingresar es Positivo")
+// }
+// else if(numero === 0){
+//     alert("El número que acabas de ingresar es igual a Cero")
+// }
+// }
+
+//EJERCICIO 6
+
+//Solicitar al usuario que ingrese un monto. Si el monto es mayor a 2000 que aplique un descuento del 10%. Mostrar el total a pagar.
+
+// let monto=prompt("Ingrese un monto");
+
+// if(monto>2000) {
+//   alert(`El monto a pagar es ${monto*90/100}`);
+// } else {
+//   alert("No tiene descuento");
+// }
+
+// EJERCICIO 7
+
+//Solicitar al usuario que ingrese una cadena de texto y luego un una posición. Indicar si el dígito de esa posición es vocal o no lo es. (Puede ser consonante, espacio, comilla, etc.)
+
+// if(texto.includes("a"))
+// {
+//     alert("El texto contiene una a");
+// }else
+// {
+//     alert("No contiene a");
+// }
+
+//EJERCICIO 8
+
+//Solicitar al usuario que ingrese una nota del 1 al 10. Si está entre 1 y 3 responder: Aplazado, si está entre 4 y 5 responder: Reprobado , y 6 o más aprobado. 
+
+// let nota=parseFloat(prompt("Ingrese su nota"));
+
+// if (nota>=1 && nota<=3) {
+//   alert("Usted está aplazado");
+// } else if (nota>=4 && nota<=5) {
+//   alert("Usted está reprobado");
+// } else {
+//   alert("Usted está aprobado!");
+// }
 
 
 

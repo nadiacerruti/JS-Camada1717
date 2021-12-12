@@ -365,12 +365,201 @@
 // let nota=parseFloat(prompt("Ingrese su nota"));
 
 // if (nota>=1 && nota<=3) {
-//   alert("Usted está aplazado");
+// alert("Usted está aplazado");
 // } else if (nota>=4 && nota<=5) {
-//   alert("Usted está reprobado");
+// alert("Usted está reprobado");
 // } else {
-//   alert("Usted está aprobado!");
+// alert("Usted está aprobado!");
 // }
+
+// EJERCICIO 9 
+
+// Solicitar al usuario dos números e indicar cual es el mayor o si son iguales.
+
+// let primerNro=parseFloat(prompt(`Ingrese un numero`));
+// let segundoNro=parseFloat(prompt(`Ingrese otro numero`));
+
+// if(primerNro>segundoNro) {
+//   alert(`El ${primerNro} es mayor que el ${segundoNro}`);
+// } else if (primerNro<segundoNro) {
+//   alert (`El ${segundoNro} es mayor que el ${primerNro}`);
+// } else {
+//   alert(`Los numeros ingresados son iguales`);
+// };
+
+//EJERCICIO 10
+
+// Solicitar al usuario que indique un mes (del 1 al 12) e indicar si tiene 30 días, 31 días o 28/29 días
+
+// let mes = parseInt(prompt(`Ingrese un mes expresado en numero del 1 al 12`));
+
+// if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12 ) {
+//   alert(`El mes ingresado tiene 31 dias`);
+// } else if (mes== 4 || mes == 6 ||  mes == 9 || mes == 11) {
+//   alert(`El mes ingresado tiene 30 dias`);
+// } else {
+//   alert(`El mes ingresado es Febrero y tiene 28 o 29 dias dependiendo de si estamos o no en año bisiesto`);
+// };
+
+//EJERCICIO 11
+
+// Solicitar al usuario que ingrese 3 números e indicar cual es el mayor.
+
+// let nro1 = parseFloat(prompt(`Ingrese un numero`));
+// let nro2 = parseFloat(prompt(`Ingrese otro numero`));
+// let nro3 = parseFloat(prompt(`Ingrese un ultimo numero`));
+
+// if (nro1> nro2 && nro1> nro3) {
+//   alert(`El primer numero es el mayor`);
+// } else if (nro2>nro1 && nro2>nro3) {
+//   alert (`El segundo numero es el mayor`);
+// } else {
+//   alert (`El tercer numero es el mayor`);
+// };
+
+// EJERCICIO 12
+
+// Solicitar al usuario que ingrese su edad y una bebida. (Entre: Cerveza, jugo, agua).Si pide alcohol y es menor de edad 
+// que le salte un alerta indicando que no puede
+// realizar la compra. Indicar el costo y solicitar al usuario que indique con cuanto va a
+// pagar e indicar cuánto sería su vuelto.
+// (Ej: La cerveza cuesta $50 y paga con 100, se le debe devolver $50. Si indica que
+// paga con menos de lo que cuesta el producto, indicar un error).
+
+// let edad = parseFloat(prompt(`Ingrese su edad`));
+// let bebida = prompt(`Ingrese la bebida de su preferencia.\n 1.Cerveza \n 2.Jugo \n 3.Agua`);
+
+// if (bebida==1 && edad>18) {
+//   let pago=parseInt(prompt(`El costo de la bebida elegida es de $100. Indique con cuanto abonara`));
+//   if (pago>=100) {
+//     alert(`Su vuelto es de $ ${pago-100}`);
+//   } else {
+//     alert(`El monto ingresado es insuficiente para realizar el pago`);
+//   }
+// } else if (bebida==2 || bebida==3 && edad>0) {
+//   let pago1=parseInt(prompt(`El costo de la bebida ingresada es de $50. Indique con cunato abonara.`));
+//   if (pago1>=50) {
+//     alert(`Su vuelto es de $ ${pago1-50}`);
+//   } else {
+//     alert(`El monto ingresado es insuficiente para realizar el pago`);
+//   }
+// } else {
+//   alert(`Usted no puede comprar cerveza por ser menor de edad, recargue la pagina y seleccione otra opcion.`);
+// };
+
+// EJERCICIO 13
+
+// Solicitar al usuario un número de mes y devolver el nombre. (Ej: Ingreso 4 y me devuelve “Abril”)
+
+// let mes = parseInt(prompt(`Ingrese un mes expresado en numero.`));
+
+// if(mes == 1) {
+//   alert(`El mes ingresado es Enero.`);
+// } else if (mes == 2) {
+//   alert(`El mes ingresado es Febrero.`);
+// } else if (mes == 3) {
+//   alert(`El mes ingresado es Marzo.`);
+// } else if (mes == 4) {
+//   alert(`El mes ingresado es Abril.`);
+// } else if (mes == 5) {
+//   alert(`El mes ingresado es Mayo.`);
+// } else if (mes == 6) {
+//   alert(`El mes ingresado es Junio.`);
+// } else if (mes == 7) {
+//   alert(`El mes ingresado es Julio.`);
+// } else if (mes == 8) {
+//   alert(`El mes ingresado es Agosto.`);
+// } else if (mes == 9) {
+//   alert(`El mes ingresado es Septiembre.`);
+// } else if (mes == 10) {
+//   alert(`El mes ingresado es Octubre.`);
+// } else if (mes == 11) {
+//   alert(`El mes ingresado es Noviembre.`);
+// } else if (mes == 12) {
+//   alert(`El mes ingresado es Diciembre.`);
+// } else {
+//   alert (`El valor ingresado no corresponde a un mes, recargue la pagina e intente nuevamente.`)
+// };
+
+// ********** BONUS **********
+
+// BONUS - EJERCICIO 1
+
+// Solicitar al usuario su clave de 4 dígitos (que tendremos almacenada en una variable) y el monto a retirar. Si la clave es correcta y el monto mayor al balance,realizar la operación. Sino, mostrar un mensaje de error en caso de ser la clave incorrecta o pedir más dinero del disponible.
+
+// let clave=1234;
+// let saldoInicial=50000;
+
+// let claveIngresada=parseInt(prompt(`Ingrese su PIN numerico.`));
+
+// if (claveIngresada==clave) {
+//   let extraccion=parseFloat(prompt(`Ingrese el monto a reitrar`));
+//   if (extraccion<=saldoInicial) {
+//     alert(`Retire su dinero, su saldo actual es de $ ${50000-extraccion}.`);
+//   } else {
+//     alert (`Saldo insuficiente para realizar la transaccion, recargue la pagina e intente nuevamente.`)
+//   }
+// } else {
+//   alert(`La clave ingresada es incorrecta, recargue la pagina e intente nuevamente.`)
+// };
+
+// BONUS - EJERCICIO 2 
+
+// Solicitar al usuario su día y mes de nacimiento e indicar cual es su signo zodiacal.
+
+// let dia= parseInt(prompt(`Ingrese su dia de nacimiento expresado en Nros.`));
+// let mes= parseInt(prompt(`Ingrese su mes de nacimiento expresado en Nros.`));
+
+// if ((dia>=21 && mes==3) || (dia<=19 && mes==4)) {
+//   alert(`Su signo zodiacal es ARIES.`);
+// } else if ((dia>=20 && mes==4) || (dia<=19 && mes==5)) {
+//   alert(`Su signo zodiacal es TAURO.`);
+// } else if ((dia>=21 && mes==5) || (dia<=21 && mes==6)) {
+//   alert(`Su signo zodiacal es GEMINIS.`);
+// } else if ((dia>=22 && mes==6) || (dia<=22 && mes==7)) {
+//   alert(`Su signo zodiacal es CENCER.`);
+// } else if ((dia>=23 && mes==7) || (dia<=22 && mes==8)) {
+//   alert(`Su signo zodiacal es LEO.`);
+// } else if ((dia>=23 && mes==8) || (dia<=22 && mes==9)) {
+//   alert(`Su signo zodiacal es VIRGO.`);
+// } else if ((dia>=23 && mes==9) || (dia<=22 && mes==10)) {
+//   alert(`Su signo zodiacal es LIBRA.`);
+// } else if ((dia>=23 && mes==10) || (dia<=22 && mes==11)) {
+//   alert(`Su signo zodiacal es ESCORPIO.`);
+// } else if ((dia>=23 && mes==11) || (dia<=21 && mes==12)) {
+//   alert(`Su signo zodiacal es SAGITARIO.`);
+// } else if ((dia>=22 && mes==12) || (dia<=20 && mes==1)) {
+//   alert(`Su signo zodiacal es CAPRICORNIO.`);
+// } else if ((dia>=21 && mes==1) || (dia<=19 && mes==2)) {
+//   alert(`Su signo zodiacal es ACUARIO.`);
+// } else if ((dia>=20 && mes==2) || (dia<=20 && mes==3)) {
+//   alert(`Su signo zodiacal es PISCIS.`);
+// } else {
+//   alert(`El valor ingresado no corresponde a una fecha del Calendario Gregoriano.`)
+// };
+
+// BONUS - EJERCICIO 3
+
+//Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos días.
+
+// let hora= parseFloat(prompt(`Ingrese la hora actual expresada en 24Hs`));
+// let minutos=parseFloat(prompt(`Ingrese los minutos`));
+// let nombre= prompt(`Ingrese su nombre`);
+
+// if (hora>=5 && hora<=11 && minutos<=59) {
+//   alert (`Buenos dias ${nombre}!`)
+// } else if (hora>=12 && hora<=18 && minutos<=59) {
+//   alert(`Buenas tardes ${nombre}!`);
+// } else if (hora>=19 && hora<23 && minutos<=59) {
+//   alert(`Buenas noches ${nombre}!`);
+// } else if (hora>=0 && hora<=4 && minutos<=59) {
+//   alert(`Buenas noches ${nombre}!`);
+// } else {
+//   alert(`El valor ingresado no corresponde a un horario expresado en 24Hs. Recargue la pagina e intente nuevamente!`);
+// };
+
+
+
 
 
 

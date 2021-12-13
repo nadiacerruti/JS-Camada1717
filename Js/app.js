@@ -558,9 +558,73 @@
 //   alert(`El valor ingresado no corresponde a un horario expresado en 24Hs. Recargue la pagina e intente nuevamente!`);
 // };
 
+// EJERCICIOS SOBRE METODOS DE STRINGS 
 
+// 1. Solicitar al usuario que ingrese un texto y validar si contiene la letra “a”.
 
+// let textoRandom=prompt(`Ingrese un texto RANDOM de su preferencia`);
 
+// if(textoRandom.toLocaleLowerCase().includes(`a`)) {
+//   alert(`El texto incluye la letra A`);
+// } else {
+//   alert(`El texto ingresado no contiene la letra A ni una sola vez.`);
+// };
+
+// 2. Solicitar al usuario que ingrese un texto y mostrarlo todo en minúsculas y todo en mayúsculas.
+
+// let textoEnMinuscula=prompt(`Ingrese un texto en minuscula.`);
+// alert(`${textoEnMinuscula.toUpperCase()}`);
+
+// let textoEnMayuscula=prompt(`Ingrese un texto en mayuscula.`);
+// alert(`${textoEnMayuscula.toLowerCase()}`);
+
+// 3. Solicitar al usuario que ingrese una palabra y mostrar con qué letra comienza.
+
+// let palabra=prompt(`Ingrese cualquier palabra`);
+
+// alert(`La palabra ingresada empieza con la letra ${palabra.toUpperCase().charAt(0)}.`);
+
+// 4. Solicitar al usuario que ingrese una frase y mostrar cuántos caracteres tiene.
+
+// let frase=prompt(`Ingrese una frase RANDOM`);
+// alert(`La frase ingresada contiene ${frase.length} caracteres incluyendo espacios.`);
+
+//5. Solicitar a un usuario que ingrese un número y devolver cuántos dígitos tiene.
+
+// let numero=prompt(`Ingrese un numero RANDOM.`);
+// alert(`El numero ingresado tiene ${numero.length} digitos`);
+
+// 6. Solicitar al usuario que ingrese una palabra y mostrar con qué letra termina.
+
+// let frase = prompt(`Ingrese una frase.`);
+// alert(`La ultima letra del texto ingresado es ${frase.charAt(frase.length-1)}`);
+
+// 7. Ingresar una cadena de texto y reemplazar los espacios por asteriscos.
+
+// let frase= prompt(`Ingrese una frase con al menos un espacio.`)
+
+// alert(`${frase.replace(` `, `*`)}`);
+
+// 8. Solicitar al usuario una letra y una cadena de texto e indicar si contiene la letra indicada.
+
+// let frase = prompt(`Ingrese una frase.`);
+// let letra = prompt(`Ingrese una letra`);
+
+// if (frase.toUpperCase().includes(letra.toUpperCase())) {
+//   alert (`La frase ingresada contiene a la letra ${letra} al menos una vez.`);
+// } else {
+//   alert(`La frase ingresada no contiene ${letra}`);
+// };
+
+// 9. Solicitar un texto y mostrarlo todo menos la primera letra.
+
+// let frase = prompt(`Ingrese una frase.`);
+// alert(`${frase.replace(frase.charAt(0), ` `)}`);
+
+// 10. Solicitar al usuario que ingrese su nombre en minúscula y mostrarlo con la primera letra mayúscula.
+
+// let nombre = prompt(`Ingrese su nombre en minusculas.`);
+// alert (nombre.charAt(0).toUpperCase() + nombre.slice(1));
 
 
 
